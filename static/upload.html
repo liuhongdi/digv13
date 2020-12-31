@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+     <title>上传文件示例</title>
+ </head>
+ <body>
+ 单文件上传：<br/>
+ <form action="/image/uploadone" method="post" enctype="multipart/form-data">
+     <input type="text" name="id" id="id" placeholder="请输入id" /> <br/>
+     <input type="file" name="f1s" /><br/>
+     <input type="submit" value="上传">
+ </form>
+ <br/><br/><br/>
+ 多文件上传(可多选)：<br/>
+ <form action="/image/uploadmore" method="post" enctype="multipart/form-data">
+     <input type="text" name="id" id="id" placeholder="请输入id" /> <br/>
+     <input type="file" name="f1m" multiple /><br/>
+     <input type="submit" value="上传">
+ </form>
+
+ </body>
+</html>
